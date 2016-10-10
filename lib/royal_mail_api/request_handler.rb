@@ -37,8 +37,8 @@ module RoyalMailApi
         log: config.logger.level.zero?,
         pretty_print_xml: true,
         headers: {
-          'X-IBM-Client-Id': config.application_id
-          'X-IBM-Client-Secret': config.application_secret
+          :'X-IBM-Client-Id' => config.application_id
+          :'X-IBM-Client-Secret' => config.application_secret
         }
       )
     end
