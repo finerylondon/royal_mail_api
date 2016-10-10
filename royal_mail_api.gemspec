@@ -6,10 +6,10 @@ require 'royal_mail_api/version'
 Gem::Specification.new do |spec|
   spec.name          = "royal_mail_api"
   spec.version       = RoyalMailApi::VERSION
-  spec.authors       = ["Srikanth Kunkulagunta"]
-  spec.email         = ["srikanth.kunkulagunta@gmail.com"]
+  spec.authors       = ["Srikanth Kunkulagunta", "Neil Turner"]
+  spec.email         = ["srikanth.kunkulagunta@gmail.com", "neil@finerylondon.com"]
 
-  spec.summary       = %q{ruby wrapper for Royal Mail's API}
+  spec.summary       = %q{ruby wrapper for Royal Mail's API (V2)}
   spec.homepage      = ""
   spec.license       = "MIT"
 
