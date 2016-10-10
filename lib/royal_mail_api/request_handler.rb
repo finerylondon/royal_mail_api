@@ -88,6 +88,7 @@ module RoyalMailApi
       {
         username: config.username,
         application_id: config.application_id,
+        application_secret: config.application_secret,
         creation_date: creation_date,
         encoded_nonce: Base64.encode64(nonce),
         password_digest: Digest::SHA1.base64digest(
