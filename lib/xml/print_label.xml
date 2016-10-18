@@ -8,7 +8,7 @@
         <v1:transactionId><%= transaction_id %></v1:transactionId>
       </v1:identification>
     </v2:integrationHeader>
-    <v2:shipmentNumber><%= tracking_number %></v2:shipmentNumber>
+    <v2:shipmentNumber><%= shipment_number %></v2:shipmentNumber>
     <v2:outputFormat><%= output_format %></v2:outputFormat>
   </v2:printLabelRequest>
 </soapenv:Body>
