@@ -81,7 +81,7 @@ module RoyalMailApi
       # TODO move into own value object
 
       password = config.password
-      creation_date =  Time.now.utc.strftime('%Y-%m-%dT%H:%M:%S')
+      creation_date =  Time.now.utc.strftime('%FT%TZ')
       nonce =  rand(999999).to_s
 
       hashedpassword = Digest::SHA1.base64digest(password)
