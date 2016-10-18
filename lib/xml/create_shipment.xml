@@ -31,7 +31,7 @@
               </serviceEnhancementCode>
             </v2:enhancementType>
           </v2:serviceEnhancements>
-          <v2:shippingDate><%= shipping_Date %></v2:shippingDate>
+          <v2:shippingDate><%= shipping_date %></v2:shippingDate>
 
           <v2:recipientContact>
               <v2:name><%= user_name %></v2:name>
