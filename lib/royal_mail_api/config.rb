@@ -8,7 +8,8 @@ module RoyalMailApi
       :shipping_endpoint,
       :tracking_endpoint,
       :application_id,
-      :application_secret,
+      :client_id,
+      :client_secret,
       :logger
 
   end
