@@ -37,8 +37,8 @@ module RoyalMailApi
         log: config.logger.level.zero?,
         pretty_print_xml: true,
         headers: {
-          :'X-IBM-Client-Id' => config.application_id,
-          :'X-IBM-Client-Secret' => config.application_secret
+          :'X-IBM-Client-Id' => config.client_id,
+          :'X-IBM-Client-Secret' => config.client_secret
         }
       )
     end
@@ -89,7 +89,8 @@ module RoyalMailApi
       {
         username: config.username,
         application_id: config.application_id,
-        application_secret: config.application_secret,
+        client_id: config.client_id,
+        client_secret: config.client_secret,
         creation_date: creation_date,
         encoded_nonce: Base64.encode64(nonce),
         password_digest: Digest::SHA1.base64digest(
