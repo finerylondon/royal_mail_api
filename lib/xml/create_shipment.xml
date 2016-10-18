@@ -18,19 +18,12 @@
           </v2:serviceType>
           <v2:serviceOffering>
               <serviceOfferingCode>
-                  <code>TPN</code>
+                  <code>TSS01</code>
               </serviceOfferingCode>
           </v2:serviceOffering>
           <v2:serviceFormat>
               <serviceFormatCode/>
           </v2:serviceFormat>
-          <v2:serviceEnhancements>
-            <v2:enhancementType>
-              <serviceEnhancementCode>
-                <code>14</code>
-              </serviceEnhancementCode>
-            </v2:enhancementType>
-          </v2:serviceEnhancements>
           <v2:shippingDate><%= shipping_date %></v2:shippingDate>
 
           <v2:recipientContact>
@@ -70,7 +63,6 @@
                   </v2:weight>
               </v2:item>
           </v2:items>
-          <v2:customerReference>CustSuppRef1</v2:customerReference>
           <v2:senderReference>SenderReference1</v2:senderReference>
           <v2:safePlace><%= try(:safe_place) %></v2:safePlace>
       </v2:requestedShipment>
