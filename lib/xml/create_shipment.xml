@@ -18,7 +18,7 @@
           </v2:serviceType>
           <v2:serviceOffering>
               <serviceOfferingCode>
-                  <code>TSS</code>
+                  <code>TPL</code>
               </serviceOfferingCode>
           </v2:serviceOffering>
           <v2:serviceFormat>
