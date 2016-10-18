@@ -1,6 +1,7 @@
 <soapenv:Body>
   <v2:printLabelRequest>
     <v2:integrationHeader>
+      <v1:dateTime>2016-10-10T08:52:03Z</v1:dateTime>
       <v1:version>2</v1:version>
       <v1:identification>
         <v1:applicationId><%= application_id %></v1:applicationId>
