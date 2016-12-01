@@ -24,7 +24,13 @@
           <v2:serviceFormat>
               <serviceFormatCode/>
           </v2:serviceFormat>
-          <v2:serviceEnhancements/>
+          <v2:serviceEnhancements>
+            <v2:enhancementType>
+              <serviceEnhancementCode>
+                <code>14</code>
+              </serviceEnhancementCode>
+            </v2:enhancementType>
+          </v2:serviceEnhancements>
           <v2:shippingDate><%= shipping_date %></v2:shippingDate>
 
           <v2:recipientContact>
