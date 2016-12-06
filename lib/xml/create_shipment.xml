@@ -14,11 +14,11 @@
           </v2:shipmentType>
           <v2:serviceOccurrence>1</v2:serviceOccurrence>
           <v2:serviceType>
-              <code>T</code>
+              <code>R</code>
           </v2:serviceType>
           <v2:serviceOffering>
               <serviceOfferingCode>
-                  <code>TSN</code>
+                  <code>TSS</code>
               </serviceOfferingCode>
           </v2:serviceOffering>
           <v2:serviceFormat>
