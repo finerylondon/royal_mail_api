@@ -10,7 +10,7 @@
       </v2:integrationHeader>
       <v2:requestedShipment>
           <v2:shipmentType>
-              <code>Delivery</code>
+              <code>Return</code>
           </v2:shipmentType>
           <v2:serviceOccurrence>1</v2:serviceOccurrence>
           <v2:serviceType>
