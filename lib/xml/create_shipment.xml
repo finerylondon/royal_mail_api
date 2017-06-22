@@ -10,11 +10,11 @@
       </v2:integrationHeader>
       <v2:requestedShipment>
           <v2:shipmentType>
-              <code>Return</code>
+              <code><% if try(:shipment_type) %><%= shipment_type %><% else %>Return<% end %></code>
           </v2:shipmentType>
           <v2:serviceOccurrence>1</v2:serviceOccurrence>
           <v2:serviceType>
-              <code>R</code>
+              <code><% if try(:service_type) %><%= service_type %><% else %>R<% end %></code>
           </v2:serviceType>
           <v2:serviceOffering>
               <serviceOfferingCode>
