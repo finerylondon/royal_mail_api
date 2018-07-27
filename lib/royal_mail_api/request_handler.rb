@@ -8,6 +8,8 @@ module RoyalMailApi
           xml.gsub!(/\A[[:space:]]+/, '')
           xml.gsub!(/[[:space:]]+\z/, '')
           xml.gsub!(/>\s+</, "><")
+          xml.gsub!(/\r/," ")
+          xml.gsub!(/\n/," ")
           puts xml
           puts '##########################'
           handler.savon.call(request_name, xml: xml)
