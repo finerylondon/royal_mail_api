@@ -5,7 +5,11 @@ module RoyalMailApi
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
           xml = handler.build_xml(attrs)
-          handler.savon.call(request_name, xml: xml)
+          xml.gsub!(/\A[[:space:]]+/, '')
+          xml.gsub!(/[[:space:]]+\z/, '')
+          puts xml
+          puts '##########################'
+          handler.savon.call(request_name, xml: xml.gsub)
         rescue Savon::SOAPFault => e
           raise RoyalMailApi::SoapError.new(xml: e.xml, error_code: e.http.code)
         end
