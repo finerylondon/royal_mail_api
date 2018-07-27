@@ -9,7 +9,7 @@ module RoyalMailApi
           xml.gsub!(/[[:space:]]+\z/, '')
           puts xml
           puts '##########################'
-          handler.savon.call(request_name, xml: xml.gsub)
+          handler.savon.call(request_name, xml: xml)
         rescue Savon::SOAPFault => e
           raise RoyalMailApi::SoapError.new(xml: e.xml, error_code: e.http.code)
         end
